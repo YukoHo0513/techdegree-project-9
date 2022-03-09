@@ -1,3 +1,62 @@
+body {
+  background-color: #dfc3c4c1;
+}
 
+.navbar-nav .navbar-light .navbar-nav .nav-link {
+  color: #b49987;
+}
+.navbar-nav a {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+header {
+  border-bottom: 2px solid #b499873c;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  margin: 0 20px;
+}
+
+g svg {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-light button.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0);
+}
+.navbar-light button.navbar-toggler i {
+  color: #b49987;
+}
+
+button.navbar-toggler:focus {
+  border: solid 2px #b499873c;
+  box-shadow: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #b49987;
+}
+.navbar-light .navbar-nav a {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+section.intro {
+  background-color: #f5f0ce;
+  margin: 30px 15px;
+  border-radius: 10px;
+  padding: 15px;
+  color: #b49987;
+}
+section.intro p.yuko {
+  font-size: 40px;
+  font-family: "Mali", cursive;
+}
+section.intro p.yuko .fa-smile-beam {
+  font-size: 30px;
+}
 
 /*# sourceMappingURL=styles.css.map */
