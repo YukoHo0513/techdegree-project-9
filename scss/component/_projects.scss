@@ -1,0 +1,15 @@
+section#project {
+    .pokemon, .chart, .memory, .employee {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        img {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            height: auto;
+            background-color: white;
+            border-radius: 15px;
+        }
+    } 
+}

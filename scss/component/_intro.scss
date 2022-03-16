@@ -1,14 +1,45 @@
-section.intro {
-    background-color: $bg-cream;
-    margin: 30px 15px;
-    border-radius: 10px;
-    padding: 15px;
-    color: $main-brown;
-        p.yuko {
-            font-size: 40px;
-            font-family: 'Mali', cursive;
-            .fa-smile-beam {
+main {
+    section.intro {
+        background-color: $bg-cream;
+        margin: 30px 15px;
+        border-radius: 10px;
+        padding: 30px;
+        color: $main-brown;
+            p.yuko {
                 font-size: 30px;
+                text-shadow: 2px 2px 3px $border-brown, 3px 3px 5px $border-brown;            
+                font-family: 'Mali', cursive;
+                .fa-smile-beam {
+                    font-size: 30px;
+                }
             }
+            p.phrase {
+                font-size: 20px;
+                font-family: 'Work Sans', sans-serif;
+                span.brackets {
+                    font-weight:900;
+                }
+            }
+    }
+    div.arrow {
+        font-size: 35px;
+        color: $main-brown;
+        text-align: center;
+    }
+    div.bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
         }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
 }
