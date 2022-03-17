@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Mali&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/@botpoison/browser" async></script>
     <title>Yuko Ho Junior Front End Developer</title>
 </head>
 <body>
@@ -62,17 +63,17 @@
                 Outside of coding, I love playing the piano, cooking Japanese food, and discovering new recipes! 
             </p>
         </section>
-        <section class="container" id="contact">
+        <section class="container p-4" id="contact">
             <h2>Contact Me</h2>
-            <form class="contact-form" action="https://submit-form.com/VdrMR3Jr">
+            <form id="form" class="contact-form" action="https://submit-form.com/VdrMR3Jr" data-botpoison-public-key="pk_056981b9-d4d6-4258-8a99-ed46a98c7349">
                 <p>
                     If you have any questions about me or my projects, or share any recipes that you love to make, please message me here!
                 </p>
                 <div>
-                    <input id="first-name" name="first-name" type="text" placeholder="name" />
-                    <input id="email" name="email" type="text" placeholder="email" />
-                    <textarea id="message" name="message" cols="15" rows="5" placeholder="message"></textarea>
-                    <button type="submit">Get in touch</button>
+                    <input id="first-name" name="first-name" type="text" placeholder="name" required/>
+                    <input id="email" name="email" type="email" placeholder="email" required/>
+                    <textarea id="message" name="message" cols="15" rows="5" placeholder="message" required></textarea>
+                    <button id="button" type="submit">Get in touch &#129309;</button>
                 </div>
             </form>
         </section>

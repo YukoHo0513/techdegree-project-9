@@ -1,0 +1,30 @@
+form div {
+    input, textarea {
+        border-radius: 8px;
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 5px;
+        border: 2px $main-brown solid;
+        &::placeholder {
+            color: $main-brown;
+        }
+        &:hover {
+            cursor: pointer;
+            border: $bg-cream 2px solid;
+        }
+        &:focus {
+            border: $bg-cream 2px solid;
+        }
+        &:focus-visible {
+            outline: none;
+        }
+    }
+    button {
+        background-color: $main-brown;
+        border: 2px $main-brown solid;
+        border-radius: 8px;
+        color: white;
+        padding: 8px;
+
+    }
+} 
