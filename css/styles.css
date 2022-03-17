@@ -64,7 +64,21 @@ section#project .pokemon img, section#project .chart img, section#project .memor
   border-radius: 15px;
 }
 
-section#about p {
+section#about .frame {
+  border-radius: 15px;
+}
+section#about .frame .cropped {
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+section#about .frame img {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  margin-right: 0;
+}
+section#about .frame p {
   text-align: center;
 }
 
@@ -73,6 +87,7 @@ form div input, form div textarea {
   width: 100%;
   margin-bottom: 8px;
   padding: 5px;
+  padding-left: 10px;
   border: 2px #b49987 solid;
 }
 form div input::placeholder, form div textarea::placeholder {

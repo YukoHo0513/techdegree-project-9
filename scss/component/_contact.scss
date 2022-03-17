@@ -4,6 +4,7 @@ form div {
         width: 100%;
         margin-bottom: 8px;
         padding: 5px;
+        padding-left: 10px;
         border: 2px $main-brown solid;
         &::placeholder {
             color: $main-brown;
