@@ -53,7 +53,7 @@ button.navbar-toggler:focus {
 }
 .navbar-light .navbar-nav a {
   font-family: "Amatic SC", cursive;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 30px;
 }
 
@@ -99,7 +99,7 @@ section#project .p-item .overlay .x-sign i.fa-times {
 }
 section#project .p-item .overlay .x-sign a.btn-light {
   color: white;
-  background-color: #b49987;
+  background-color: #967f70;
   border: none;
   margin-top: 7px;
 }
@@ -146,6 +146,9 @@ form .icons {
 form .icons a {
   color: #7e6d63;
 }
+form .icons a i:hover {
+  color: #f5f0ce;
+}
 form p {
   text-align: center;
 }
@@ -176,6 +179,10 @@ form div button {
   border-radius: 8px;
   color: white;
   padding: 8px;
+}
+form div button:hover {
+  background-color: #f5f0ce;
+  color: #7e6d63;
 }
 
 footer {
@@ -208,8 +215,8 @@ main section.intro p.phrase {
   font-size: 20px;
   font-family: "Work Sans", sans-serif;
 }
-main section.intro p.phrase span.brackets {
-  font-weight: 900;
+main section.intro p.phrase i {
+  font-size: 30px;
 }
 main div.arrow {
   font-size: 35px;

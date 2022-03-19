@@ -6,6 +6,9 @@ form {
         margin-bottom: 10px;
         a {
             color: $main-brown;
+            i:hover {
+               color: $bg-cream;
+            }
         }
     }
     p {
@@ -39,7 +42,10 @@ form {
             border-radius: 8px;
             color: white;
             padding: 8px;
-    
+        }
+        button:hover {
+            background-color: $bg-cream;
+            color: $main-brown;
         }
     } 
 
