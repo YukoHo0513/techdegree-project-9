@@ -3,11 +3,12 @@ body {
 }
 
 body {
-  color: #b49987;
+  color: #7e6d63;
 }
 
 h2 {
   padding: 30px 15px;
+  padding-top: 0;
   font-family: "Amatic SC", cursive;
   font-size: 35px;
   font-weight: 600;
@@ -17,6 +18,12 @@ h2 {
 
 p {
   font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 900;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -42,7 +49,7 @@ button.navbar-toggler:focus {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #b49987;
+  color: #7e6d63;
 }
 .navbar-light .navbar-nav a {
   font-family: "Amatic SC", cursive;
@@ -50,20 +57,71 @@ button.navbar-toggler:focus {
   font-size: 30px;
 }
 
-section#project .pokemon, section#project .chart, section#project .memory, section#project .employee {
+section#project .p-item {
   width: 300px;
   margin: 0 auto;
   margin-bottom: 15px;
+  position: relative;
 }
-section#project .pokemon img, section#project .chart img, section#project .memory img, section#project .employee img {
+section#project .p-item img {
   display: block;
   width: 100%;
   padding: 20px;
   height: auto;
   background-color: white;
   border-radius: 15px;
+  cursor: pointer;
+}
+section#project .p-item .overlay {
+  display: none;
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  background-color: rgba(23, 22, 22, 0.769);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  color: white;
+}
+section#project .p-item .overlay .x-sign {
+  position: relative;
+  cursor: pointer;
+}
+section#project .p-item .overlay .x-sign i.fa-times {
+  position: absolute;
+  right: -4px;
+  top: -3px;
+  font-size: 20px;
+}
+section#project .p-item .overlay .x-sign a.btn-light {
+  color: white;
+  background-color: #b49987;
+  border: none;
+  margin-top: 7px;
+}
+section#project .p-item .overlay .x-sign i + a.btn-light {
+  margin-right: 20px;
+}
+section#project .p-item .overlay .x-sign p {
+  font-size: 15px;
+  padding-top: 10px;
+  line-height: 1.6;
+}
+section#project .p-item .overlay .x-sign p span {
+  font-size: 15px;
+  background-color: #f5f0ce;
+  border-radius: 20px;
+  color: #4b1b1b;
+  padding: 2px 5px;
 }
 
+section#about p {
+  text-align: center;
+}
 section#about .frame {
   border-radius: 15px;
 }
@@ -71,27 +129,36 @@ section#about .frame .cropped {
   margin-bottom: 20px;
   border-radius: 15px;
 }
-section#about .frame img {
+section#about .frame .cropped img {
   display: block;
   width: 100%;
   padding: 20px;
   height: auto;
   margin-right: 0;
 }
-section#about .frame p {
+
+form .icons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+form .icons a {
+  color: #7e6d63;
+}
+form p {
   text-align: center;
 }
-
 form div input, form div textarea {
   border-radius: 8px;
   width: 100%;
   margin-bottom: 8px;
   padding: 5px;
   padding-left: 10px;
-  border: 2px #b49987 solid;
+  border: 2px #7e6d63 solid;
 }
 form div input::placeholder, form div textarea::placeholder {
-  color: #b49987;
+  color: #7e6d63;
 }
 form div input:hover, form div textarea:hover {
   cursor: pointer;
@@ -104,19 +171,30 @@ form div input:focus-visible, form div textarea:focus-visible {
   outline: none;
 }
 form div button {
-  background-color: #b49987;
-  border: 2px #b49987 solid;
+  background-color: #7e6d63;
+  border: 2px #7e6d63 solid;
   border-radius: 8px;
   color: white;
   padding: 8px;
+}
+
+footer {
+  background-color: #f5f0ce;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 0;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: 900;
 }
 
 main section.intro {
   background-color: #f5f0ce;
   margin: 30px 15px;
   border-radius: 10px;
-  padding: 30px;
-  color: #b49987;
+  padding: 20px;
+  color: #7e6d63;
 }
 main section.intro p.yuko {
   font-size: 30px;
@@ -124,7 +202,7 @@ main section.intro p.yuko {
   font-family: "Mali", cursive;
 }
 main section.intro p.yuko .fa-smile-beam {
-  font-size: 30px;
+  font-size: 25px;
 }
 main section.intro p.phrase {
   font-size: 20px;
@@ -135,7 +213,7 @@ main section.intro p.phrase span.brackets {
 }
 main div.arrow {
   font-size: 35px;
-  color: #b49987;
+  color: #7e6d63;
   text-align: center;
 }
 main div.bounce {

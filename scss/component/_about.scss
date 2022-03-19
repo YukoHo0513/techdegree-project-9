@@ -1,20 +1,19 @@
 section#about {
+    p {
+        text-align: center;
+    }
     .frame {
         border-radius: 15px;
-
         .cropped {
             margin-bottom: 20px;
             border-radius: 15px;
-        }
-        img {
-            display: block;
-            width: 100%;
-            padding: 20px;
-            height: auto;
-            margin-right: 0;
-        }
-        p {
-            text-align: center;
+            img {
+                display: block;
+                width: 100%;
+                padding: 20px;
+                height: auto;
+                margin-right: 0;
+            }
         }
     }
     

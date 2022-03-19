@@ -1,8 +1,9 @@
 section#project {
-    .pokemon, .chart, .memory, .employee {
+    .p-item {
         width: 300px;
         margin: 0 auto;
         margin-bottom: 15px;
+        position: relative;
         img {
             display: block;
             width: 100%;
@@ -10,6 +11,54 @@ section#project {
             height: auto;
             background-color: white;
             border-radius: 15px;
+            cursor: pointer;
         }
+        .overlay {
+            display: none;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            background-color:  rgba(23, 22, 22, 0.769);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+            color: white;
+            .x-sign {
+                position: relative;
+                cursor: pointer;
+                i.fa-times {
+                    position: absolute;
+                    right: -4px;
+                    top: -3px;
+                    font-size: 20px;
+                }
+                a.btn-light {
+                    color: white;
+                    background-color: $btn-brown;
+                    border: none;
+                    margin-top: 7px;
+                }
+                i + a.btn-light {
+                    margin-right: 20px;
+                }
+                p {
+                    font-size: 15px;
+                    padding-top: 10px;
+                    line-height: 1.6;
+                    span {
+                        font-size: 15px;
+                        background-color: $bg-cream;
+                        border-radius: 20px;
+                        color: rgb(75, 27, 27);
+                        padding: 2px 5px;
+                    }
+                } 
+            }
+        }
+        
     } 
 }
