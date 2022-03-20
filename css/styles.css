@@ -269,6 +269,12 @@ footer p {
   font-weight: 900;
 }
 
+main h3.thank_you {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 main section.intro {
   background-color: #f5f0ce;
   margin: 30px 15px;
