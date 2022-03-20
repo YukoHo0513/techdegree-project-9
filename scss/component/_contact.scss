@@ -50,3 +50,11 @@ form {
     } 
 
 }
+
+@media only screen and (min-width: 1024px) {
+    form {
+        .icons {
+            font-size: 50px;
+        }
+    }
+}

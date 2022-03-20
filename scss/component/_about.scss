@@ -18,3 +18,16 @@ section#about {
     }
     
 }
+
+@media only screen and (min-width: 768px) {
+    section#about {
+        .frame {
+            .cropped {
+                img {
+                    width: 60%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

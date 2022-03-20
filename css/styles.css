@@ -27,6 +27,16 @@ h3 {
   font-family: "Work Sans", sans-serif;
 }
 
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 45px;
+  }
+}
 header {
   border-bottom: 2px solid #b499873c;
   padding-top: 20px;
@@ -58,7 +68,7 @@ button.navbar-toggler:focus {
 }
 
 section#project .p-item {
-  width: 300px;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 15px;
   position: relative;
@@ -75,7 +85,7 @@ section#project .p-item img {
 section#project .p-item .overlay {
   display: none;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   position: absolute;
   background-color: rgba(23, 22, 22, 0.769);
   top: 0;
@@ -93,9 +103,9 @@ section#project .p-item .overlay .x-sign {
 }
 section#project .p-item .overlay .x-sign i.fa-times {
   position: absolute;
-  right: -4px;
-  top: -3px;
-  font-size: 20px;
+  right: -1px;
+  top: -2px;
+  font-size: 18px;
 }
 section#project .p-item .overlay .x-sign a.btn-light {
   color: white;
@@ -107,7 +117,7 @@ section#project .p-item .overlay .x-sign i + a.btn-light {
   margin-right: 20px;
 }
 section#project .p-item .overlay .x-sign p {
-  font-size: 15px;
+  font-size: 18px;
   padding-top: 10px;
   line-height: 1.6;
 }
@@ -118,7 +128,41 @@ section#project .p-item .overlay .x-sign p span {
   color: #4b1b1b;
   padding: 2px 5px;
 }
+section#project .p-item .overlay .x-sign .poke-title {
+  padding-top: 18px;
+}
 
+@media only screen and (min-width: 767px) {
+  section#project .p-item {
+    width: 60%;
+  }
+  section#project .p-item .overlay {
+    padding: 25px;
+  }
+  section#project .p-item .overlay .x-sign i.fa-times {
+    top: -5px;
+    right: -5px;
+    font-size: 21px;
+  }
+  section#project .p-item .overlay .x-sign a.btn-light {
+    margin-top: 15px;
+  }
+  section#project .p-item .overlay .x-sign p {
+    font-size: 25px;
+  }
+  section#project .p-item .overlay .x-sign p span {
+    font-size: 18px;
+    padding: 3px 7px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  section#project .p-item:first-child {
+    margin-right: 5px;
+  }
+  section#project .p-item {
+    width: 50%;
+  }
+}
 section#about p {
   text-align: center;
 }
@@ -137,6 +181,12 @@ section#about .frame .cropped img {
   margin-right: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  section#about .frame .cropped img {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 form .icons {
   display: flex;
   justify-content: space-evenly;
@@ -185,6 +235,11 @@ form div button:hover {
   color: #7e6d63;
 }
 
+@media only screen and (min-width: 1024px) {
+  form .icons {
+    font-size: 50px;
+  }
+}
 footer {
   background-color: #f5f0ce;
   text-align: center;
@@ -237,6 +292,26 @@ main div.bounce {
   }
   60% {
     transform: translateY(-5px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main section.intro {
+    margin: 40px 80px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main section.intro {
+    padding: 30px 60px;
+  }
+  main section.intro p.yuko {
+    font-size: 50px;
+  }
+  main section.intro p.yuko i.fa-smile-beam {
+    font-size: 40px;
+  }
+  main section.intro p.phrase {
+    font-size: 30px;
   }
 }
 

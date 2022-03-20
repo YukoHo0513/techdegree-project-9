@@ -16,9 +16,6 @@ main {
             p.phrase {
                 font-size: 20px;
                 font-family: 'Work Sans', sans-serif;
-                // span.brackets {
-                //     font-weight:900;
-                // }
                 i {
                     font-size: 30px;
                 }
@@ -45,4 +42,29 @@ main {
           transform: translateY(-5px);
         }
       }
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        section.intro {
+            margin: 40px 80px; 
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    main {
+        section.intro {
+            padding: 30px 60px;
+            p.yuko {
+                font-size: 50px;
+                i.fa-smile-beam {
+                    font-size: 40px;
+                }
+            }
+            p.phrase {
+                font-size: 30px;
+            }
+        }
+    }
 }
