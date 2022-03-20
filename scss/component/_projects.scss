@@ -94,15 +94,31 @@ section#project {
     }
     
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 991px) {
     section#project {
-        
+        margin: 40px;
         .p-item:first-child {
-            margin-right: 5px;
+            margin-right: 10px;
         }
         .p-item {
             width: 50%;
+            img {
+                height: 350px;
+            }
+            .overlay {
+                .x-sign {
+                    .webapp-title {
+                        padding-top: 18px;
+                    }
+                }
+            }
         }
     }
 }
 
+@media only screen and (min-width: 1000px) {
+    section#project {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}

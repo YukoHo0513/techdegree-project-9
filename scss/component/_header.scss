@@ -3,6 +3,9 @@ header {
     padding-top: 20px;
     padding-bottom: 8px;
     margin: 0 20px;
+    .navbar-expand-lg .navbar-collapse {
+        margin-left: 40px;
+    }
 }
 img {
     width: 50px;

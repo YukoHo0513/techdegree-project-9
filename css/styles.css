@@ -43,6 +43,9 @@ header {
   padding-bottom: 8px;
   margin: 0 20px;
 }
+header .navbar-expand-lg .navbar-collapse {
+  margin-left: 40px;
+}
 
 img {
   width: 50px;
@@ -155,12 +158,27 @@ section#project .p-item .overlay .x-sign .poke-title {
     padding: 3px 7px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 991px) {
+  section#project {
+    margin: 40px;
+  }
   section#project .p-item:first-child {
-    margin-right: 5px;
+    margin-right: 10px;
   }
   section#project .p-item {
     width: 50%;
+  }
+  section#project .p-item img {
+    height: 350px;
+  }
+  section#project .p-item .overlay .x-sign .webapp-title {
+    padding-top: 18px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  section#project {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 section#about p {
